@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>postDataServiceImpl</servlet-name>
+    <servlet-class>edu.gac.mcs270.hvidsten.guslistjdo.server.GetPostDataServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>postDataServiceImpl</servlet-name>
+    <url-pattern>/guslistjdo/postdata</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>submitPostServiceImpl</servlet-name>
+    <servlet-class>edu.gac.mcs270.hvidsten.guslistjdo.server.SubmitPostServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>submitPostServiceImpl</servlet-name>
+    <url-pattern>/guslistjdo/submitpost</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>GusListJDO.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>

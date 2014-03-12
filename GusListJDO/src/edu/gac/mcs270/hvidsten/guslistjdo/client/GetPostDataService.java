@@ -15,5 +15,4 @@ import edu.gac.mcs270.hvidsten.guslistjdo.shared.PostData;
 public interface GetPostDataService extends RemoteService {
 	public List<PostData> getPostDataFromServer();
 
-	List<PostData> deletePostFromServer();
 }

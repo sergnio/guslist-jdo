@@ -30,4 +30,16 @@ public class GusListModel {
 		PersistenceManager pm = pmf.getPersistenceManager();
 		pm.makePersistent(post);
 	}
+	
+	public static void deletePost(PostData post) {
+		PersistenceManager pm = pmf.getPersistenceManager();
+		Query query = pm.newQuery(PostData.class);
+		List<PostData> posts = (List<PostData>) query.execute();
+		for(PostData i:posts) {
+			if (i.getPostID() == post.getPostID()) {
+				pm.deletePersistent(i);
+				}
+			
+	}
+}
 }

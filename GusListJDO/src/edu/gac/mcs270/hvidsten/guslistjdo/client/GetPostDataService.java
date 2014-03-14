@@ -8,7 +8,7 @@ import com.google.gwt.user.client.rpc.RemoteServiceRelativePath;
 import edu.gac.mcs270.hvidsten.guslistjdo.shared.PostData;
 
 /**
- *  The client side stub for the RPC service.
+ *  The client side stub for the RPC service. plz
  */
 // Note: Name needs to match url-pattern in web.xml
 @RemoteServiceRelativePath("postdata") 
